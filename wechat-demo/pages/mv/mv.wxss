@@ -1,0 +1,69 @@
+/* pages/mv/mv.wxss */
+
+#myVideo{
+    width:100%;
+}
+.btn-area{
+    line-height: 45px;
+}
+.active{
+    background-color: green;
+    color:#fff;
+}
+.inp{
+    width:80%;
+    height: 45px;
+    border:2px solid #999;
+    display:inline-block;
+    float:left;
+}
+.btn-area{
+    overflow: hidden;
+}
+.vinfo{
+    width:100%;
+    height:100px;
+}
+.section .title{
+    width:90%;
+    height:20px;
+    
+    text-align: right;
+    font-size:14px;
+    line-height: 20px;
+}
+.flex-item{
+    width:24%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+}
+
+.scroll-view-item{
+    width:100%;
+    height:100px;
+
+}
+.mv{
+    width:100%;
+}
+.bc_white{
+    background-color: #fff;
+    color:gray;
+    border:1px gray solid;
+}
+.bc_green{
+    background-color: green;
+}
+.bc_red{
+    background-color:red;
+}
+
+.bc_yellow{ 
+    background-color:yellow;
+}
+
+.bc_blue{
+    background-color: blue;
+}

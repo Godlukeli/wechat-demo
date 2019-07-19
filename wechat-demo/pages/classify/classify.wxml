@@ -23,7 +23,7 @@
         bindscrolltolower="lower"
         bindscroll="scroll"
       >
-          <view wx:for="{{news}}" class="news">
+          <view wx:for="{{news}}" wx:key="{{index}}" class="news">
                <navigator url="{{'../../pages/newlist/newlist?title='+item.title+'&_id='+item._id+'&url='+item.url}}" >
                     <view class="tltle">{{item.title}}</view>
                     <image src="{{item.thumbnail_pic_s}}"></image>

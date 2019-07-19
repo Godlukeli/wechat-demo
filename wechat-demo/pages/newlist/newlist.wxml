@@ -1,6 +1,6 @@
 <!--pages/newlist/newlist.wxml-->
 <view>
-   <view wx:for="{{new}}">
+   <view wx:for="{{newList}}" wx:key="{{index}}">
         <view class="tltle">{{item.title}}</view>
         <image src="{{item.thumbnail_pic_s}}"></image>
         <image src="{{item.thumbnail_pic_s02}}"></image>
