@@ -1,0 +1,38 @@
+/* pages/newlist/newlist.wxss */
+
+.news{
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border-bottom:1px solid grey;
+ 
+}
+.news image{
+  width:100%;
+  
+}
+
+.tltle{
+  color:green;
+  padding-bottom:5px;
+  box-sizing: border-box;
+}
+.laiyuan{
+  color:red;
+}
+.zuozhe{
+  overflow: hidden;
+  padding-top:3px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+.author{
+  float:left;
+  color: darkgoldenrod;
+}
+.data{
+  float:right;
+  color:blueviolet;
+}

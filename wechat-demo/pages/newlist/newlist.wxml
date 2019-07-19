@@ -1,0 +1,14 @@
+<!--pages/newlist/newlist.wxml-->
+<view>
+   <view wx:for="{{new}}">
+        <view class="tltle">{{item.title}}</view>
+        <image src="{{item.thumbnail_pic_s}}"></image>
+        <image src="{{item.thumbnail_pic_s02}}"></image>
+        <image src="{{item.thumbnail_pic_s03}}"></image>
+        <view class="laiyuan">来源:{{item.category}}</view>
+        <view class="zuozhe">
+            <view class="author">作者:{{item.author_name}}</view>
+            <view class="data">时间:{{item.date}}</view>
+        </view>
+   </view>
+</view>

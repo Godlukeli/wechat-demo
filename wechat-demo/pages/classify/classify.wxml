@@ -1,0 +1,38 @@
+
+<!-- 播放视频 -->
+<view class="section">
+  <video id="myVideo" src="http://resource.yaokan.sogoucdn.com/videodown/4506/257/f2a571249eef0a518ad1fadbecebe114.mp4"
+  controls
+  bindplay='videoplay'  
+  bindtimeupdate='videoupdate'
+  ></video>
+</view>
+
+ <view class="btn-area">
+    <button bindtap="bindButtonTap" type="warn" size="mini">新闻列表</button>
+  </view>
+
+<!-- 新闻列表 -->
+  <view>
+     <scroll-view
+         scroll-y
+        class="scroll"
+        upper-threshold="50"
+        lower-threshold="50"
+        bindscrolltoupper="upper"
+        bindscrolltolower="lower"
+        bindscroll="scroll"
+      >
+          <view wx:for="{{news}}" class="news">
+               <navigator url="{{'../../pages/newlist/newlist?title='+item.title+'&_id='+item._id+'&url='+item.url}}" >
+                    <view class="tltle">{{item.title}}</view>
+                    <image src="{{item.thumbnail_pic_s}}"></image>
+                    <view class="laiyuan">来源:{{item.category}}</view>
+                    <view class="zuozhe">
+                        <view class="author">作者:{{item.author_name}}</view>
+                        <view class="data">时间:{{item.date}}</view>
+                    </view>
+               </navigator>
+          </view>
+     </scroll-view>
+  </view>
